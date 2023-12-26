@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="\static\style.css" type="text/css" />
+  </head>
+  <body>
+    <form method="post">
+      <center>
+        <h1>Login</h1>
+        <table>
+          <tr>
+            <td>EmployeeName:</td>
+            <td>
+              <input type="text" name="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td>
+              <input type="password" name="password" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit">Login</button>
+              <a href="{{url_for('view')}}">view</a>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

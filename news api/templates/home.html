@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+</head>
+
+<body>
+    <h1>NEWS APP</h1>
+    {% for movie in context %}
+        <div><img src="{{movie['urlToImage']}}" width="500px" height="300px"></div>
+        <div>{{movie["author"]}}</div>
+        <div>{{movie["title"]}}</div>
+        <div>{{movie["description"]}}</div>
+        <a href="{{movie['url']}}">Click here for more info</a>
+    {% endfor %}
+</body>
+
+</html>
